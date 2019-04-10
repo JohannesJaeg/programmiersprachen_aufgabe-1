@@ -61,11 +61,19 @@ int sum_multiples() {
 	return Summe;
 }
 
+int fract() {
+	float Zahl = 2.1352, intZahl, fractZahl;
+	fractZahl = modf(Zahl, &intZahl);
+	std::cout << fractZahl;
+	return 0;
+	
+}
 
 int main(int argc, char* argv[])
 {
 	//return Catch::Session().run(argc, argv);
 	  //std::cout << is_prime();
 	  //std::cout << "Quersumme ist " << checksum();
-	std::cout << "Die Summe der Zahlen von 1 bis 1000, die durch 3 oder durch 5 teilbar, sind betraegt " << sum_multiples();
+	//std::cout << "Die Summe der Zahlen von 1 bis 1000, die durch 3 oder durch 5 teilbar sind, betraegt " << sum_multiples();
+	std::cout << fract();
 }
