@@ -64,9 +64,20 @@ int sum_multiples() {
 int fract() {
 	float Zahl = 2.1352, intZahl, fractZahl;
 	fractZahl = modf(Zahl, &intZahl);
-	std::cout << fractZahl;
-	return 0;
+	std::cout << "Der Nachkommaanteil der Gleitkommazahl ist " <<fractZahl;
+	return Zahl;
 	
+}
+
+int zylinder() {
+	float r = 3;
+	float h = 5;
+	float pi = 3.14159265358979323846;
+	float V, A;
+	V = pi * (2 * r) * h;
+	A = 2 * pi * r * (r + h);
+	std::cout << "Das Volumen betraegt " << V << " kubikcm und" << " Die Oberflaeche betraegt " << A << " quadratcm";
+	return 0;
 }
 
 int main(int argc, char* argv[])
@@ -75,5 +86,6 @@ int main(int argc, char* argv[])
 	  //std::cout << is_prime();
 	  //std::cout << "Quersumme ist " << checksum();
 	//std::cout << "Die Summe der Zahlen von 1 bis 1000, die durch 3 oder durch 5 teilbar sind, betraegt " << sum_multiples();
-	std::cout << fract();
+	//std::cout << fract();
+	std::cout << zylinder();
 }
