@@ -39,8 +39,19 @@ int is_prime() {
 	return Zahl;
 };
 
+int checksum() {
+	int Zahl = 122;
+	int Quersumme = 0;
+	while (Zahl > 0) {
+		Quersumme += Zahl % 10;
+		Zahl /= 10;
+	}
+	return Quersumme;
+};
+
 int main(int argc, char* argv[])
 {
-	std::cout << is_prime();
   //return Catch::Session().run(argc, argv);
+	//std::cout << is_prime();
+	std::cout << "Quersumme ist " << checksum();
 }
