@@ -15,7 +15,8 @@ int Division(){
 		Zahl += 20;
 	}
 };
+
 int main()
 {
-	std::cout<<Division();
+	std::cout << Division();
 }
