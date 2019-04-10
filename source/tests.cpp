@@ -37,21 +37,35 @@ int is_prime() {
 		}
 	}
 	return Zahl;
-};
+}
 
 int checksum() {
-	int Zahl = 122;
+	int Zahl = 119933;
 	int Quersumme = 0;
 	while (Zahl > 0) {
 		Quersumme += Zahl % 10;
 		Zahl /= 10;
 	}
 	return Quersumme;
-};
+}
+
+int sum_multiples() {
+	int Summe = 0;
+	int i = 1;
+	while (i <= 1000) {
+		if ((i % 3 == 0) || (i % 5 == 0)) {
+			Summe = Summe + i;
+		}
+		i += 1;
+	}
+	return Summe;
+}
+
 
 int main(int argc, char* argv[])
 {
-  //return Catch::Session().run(argc, argv);
-	//std::cout << is_prime();
-	std::cout << "Quersumme ist " << checksum();
+	//return Catch::Session().run(argc, argv);
+	  //std::cout << is_prime();
+	  //std::cout << "Quersumme ist " << checksum();
+	std::cout << "Die Summe der Zahlen von 1 bis 1000, die durch 3 oder durch 5 teilbar, sind betraegt " << sum_multiples();
 }

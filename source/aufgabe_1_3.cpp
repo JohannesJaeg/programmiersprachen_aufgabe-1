@@ -14,7 +14,7 @@ int Division(){
 		}
 		Zahl += 20;
 	}
-};
+}
 
 int main()
 {
