@@ -70,14 +70,23 @@ int fract() {
 }
 
 int zylinder() {
-	float r = 3;
-	float h = 5;
+	float r = 3.231;
+	float h = 5.32;
 	float pi = 3.14159265358979323846;
 	float V, A;
 	V = pi * (2 * r) * h;
 	A = 2 * pi * r * (r + h);
 	std::cout << "Das Volumen betraegt " << V << " kubikcm und" << " Die Oberflaeche betraegt " << A << " quadratcm";
 	return 0;
+}
+
+int factorial() {
+	int Zahl = 5;
+	long factor = 1;
+	for (int i = 1; i <= Zahl; i++) {
+		factor *= i;
+	}
+	return factor;
 }
 
 int main(int argc, char* argv[])
@@ -87,5 +96,6 @@ int main(int argc, char* argv[])
 	  //std::cout << "Quersumme ist " << checksum();
 	//std::cout << "Die Summe der Zahlen von 1 bis 1000, die durch 3 oder durch 5 teilbar sind, betraegt " << sum_multiples();
 	//std::cout << fract();
-	std::cout << zylinder();
+	//std::cout << zylinder();
+	std::cout << "Die Fakultaet der Zahl betraegt " << factorial();
 }
