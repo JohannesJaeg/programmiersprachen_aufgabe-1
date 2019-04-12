@@ -18,5 +18,5 @@ int Division(){
 
 int main()
 {
-	std::cout << Division();
+	std::cout << "Die Zahl. welche durch 1 bis 20 teilbar ist, betraegt " << Division();
 }

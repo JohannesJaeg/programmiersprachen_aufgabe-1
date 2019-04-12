@@ -2,10 +2,6 @@
 #include "catch.hpp"
 #include <cmath>
 
-//int gcd(int a, int b) {
-//	return 1;
-//}
-
 int is_prime() {
 	int Zahl = 11;
 	int zaehler = 0;
@@ -65,8 +61,8 @@ int fract() {
 }
 
 int zylinder(float r, float h) {
-	//float r = 3.231;
-	//float h = 5.32;
+	float r = 3.231;
+	float h = 5.32;
 	float pi = 3.14159265358979323846;
 	float V, A;
 	V = pi * (2 * r) * h;
